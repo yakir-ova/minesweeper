@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "command": "cmd start",
+      "name": "Run cmd start",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MinesweeperApplication<minesweeper>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.example.minesweeper.MinesweeperApplication",
+      "projectName": "minesweeper",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

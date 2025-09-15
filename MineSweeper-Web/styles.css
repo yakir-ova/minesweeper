@@ -1,0 +1,75 @@
+:root {
+  --cell: 32px;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 24px;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0 0 12px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.toolbar input {
+  width: 72px;
+  padding: 4px 6px;
+}
+
+#board {
+  display: grid;
+  gap: 2px;
+  margin-top: 8px;
+  width: max-content;
+  user-select: none;
+}
+.cell {
+  width: var(--cell);
+  height: var(--cell);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+  background: #bbb;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cell.revealed {
+  background: #e5e5e5;
+  cursor: default;
+}
+
+.cell.flagged {
+  background: #ffd966;
+}
+
+.cell.mine {
+  background: #ffcccc;
+}
+
+.cell:active {
+  filter: brightness(0.95);
+}
+
+#log {
+  margin-top: 16px;
+  background: #111;
+  color: #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 520px;
+  min-height: 80px;
+  white-space: pre-wrap;
+}

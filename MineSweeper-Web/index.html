@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper - UI Only</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Minesweeper - UI Test</h1>
+
+    <div class="toolbar">
+      <label>Rows <input id="rows" type="number" min="2" max="10" /></label>
+      <label>Cols <input id="cols" type="number" min="2" max="10" /></label>
+      <button id="newGame">New Game</button>
+    </div>
+    <div id="board" aria-label="Minesweeper board"></div>
+
+    <div id="log" aria-live="polite">Click a cell to see logs here...</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
